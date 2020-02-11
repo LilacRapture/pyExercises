@@ -98,7 +98,7 @@ def get_sort_algorithm(name):
 # divide and process command line args by their meaning
 def process_args_list(args_list):
     args_list.pop(0)
-    sort_method_name = args_list.pop(0)
+    sort_method_name = args_list.pop(0) # TODO: add a check that method name is actually a string
     algorithm = get_sort_algorithm(sort_method_name)
 
     if algorithm is None:
