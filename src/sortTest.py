@@ -2,6 +2,7 @@ import sys
 import unittest
 
 # TODO: move tests to a separate module
+# TODO: explore github actions and find action to launch tests automatically on every commit
 
 def insert_sort(A):
     """сортировка списка А вставками"""
