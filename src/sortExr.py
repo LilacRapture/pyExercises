@@ -1,4 +1,3 @@
-# TODO: move tests to a separate module
 # TODO: explore github actions and find action to launch tests automatically on every commit
 
 def insert_sort(A):
@@ -22,7 +21,6 @@ def bubble_sort(A):
         for bubble in range(0, len(A)-bypass):
             if A[bubble] > A[bubble+1]:
                 A[bubble], A[bubble+1] = A[bubble+1], A[bubble]
-
 
 ## processing command line input
 # returns sorting function by given name
