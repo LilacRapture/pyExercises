@@ -17,7 +17,11 @@ jobs:
       run: |
         ls -al
         pwd
-    - name: Test with pytest
+    - name: Just run
+      run: |
+        pwd
+        python src bubble 2 1
+    - name: Test with unittest
       run: |
         pwd
         python -m unittest discover -v
