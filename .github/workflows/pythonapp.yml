@@ -13,5 +13,7 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
+    - name: List Directory
+      run: ls -al
     - name: Test with pytest
       run: python -m unittest -v
