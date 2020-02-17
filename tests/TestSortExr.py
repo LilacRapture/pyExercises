@@ -65,5 +65,5 @@ class TestSortMethodsGenerated(unittest.TestCase):
         bubble_sort(self.list_of_ints)
         self.assertEqual(self.list_of_ints, self.sorted_list_of_ints, "not sorted")
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
