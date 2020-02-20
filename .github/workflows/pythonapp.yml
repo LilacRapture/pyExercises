@@ -13,15 +13,5 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-    - name: List Directory
-      run: |
-        ls -al
-        pwd
-    - name: Just run
-      run: |
-        pwd
-        python src bubble 2 1
     - name: Test with unittest
-      run: |
-        pwd
-        python -m unittest discover -v
+      run: python -m unittest discover -v
