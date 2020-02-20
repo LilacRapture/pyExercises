@@ -1,4 +1,4 @@
-from src.sortExr import insert_sort, choice_sort, bubble_sort
+from src.sortExr import *
 
 import unittest
 
@@ -64,6 +64,18 @@ class TestSortMethodsGenerated(unittest.TestCase):
     def test_bubble_sort(self):
         bubble_sort(self.list_of_ints)
         self.assertEqual(self.list_of_ints, self.sorted_list_of_ints, "not sorted")
+
+class TestUtilityFunctions(unittest.TestCase):
+
+    def test_parses_to_int(self):
+        is_int = is_parses_to_int("3")
+        not_int = is_parses_to_int("dzfgz")
+        self.assertTrue(is_int)
+        self.assertFalse(not_int)
+
+    def test_get_sort_algorithm(self):
+        self.assertEqual(get_sort_algorithm("bubble"), bubble_sort, "not found")
+        self.assertIsNone(get_sort_algorithm("kjhnk"))
 
 if __name__ == '__main__':
     unittest.main()

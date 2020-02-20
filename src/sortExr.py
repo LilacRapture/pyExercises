@@ -1,5 +1,3 @@
-# TODO: explore github actions and find action to launch tests automatically on every commit
-
 def insert_sort(A):
     """сортировка списка А вставками"""
     for top in range(1, len(A)):
