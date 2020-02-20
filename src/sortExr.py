@@ -22,7 +22,6 @@ def bubble_sort(A):
 
 ## processing command line input
 # returns sorting function by given name
-# TODO: cover this function with tests
 def get_sort_algorithm(name):
     return {
         'bubble': bubble_sort,
@@ -31,7 +30,6 @@ def get_sort_algorithm(name):
     }.get(name)
 
 # check if string parses to an int
-# TODO: cover this function with tests
 def is_parses_to_int(int_string):
     try:
         int(int_string)
